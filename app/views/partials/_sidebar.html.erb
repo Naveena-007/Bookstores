@@ -1,0 +1,26 @@
+<%# side bar for the about us page %>
+<% if params[:controller] == 'about' %>
+  <div class="well">
+    <h3>Location Info</h3>
+    <ul>
+        <li>The Bookstore</li>
+        <li>499 Massachusetts Ave, Unit 2</li>
+        <li>Boston, Ma 02110</li>
+        <li>Phone: (617) 555-5555</li>
+        <li>Email: Support@thebookstore.com</li>
+    </ul>
+   
+  </div>
+<% end %>
+
+<%# side bar for the bookstrore %>
+ <% if params[:controller] == 'books' %>
+<div class="list-group">
+  <a href="#" class="list-group-item">Ruby on rails</a>
+  <a href="#" class="list-group-item">PHP</a>
+  <a href="#" class="list-group-item">HTML5</a>
+</div>
+<% end %>
+
+<%# $$ params[:action] == 'index' ||
+params[:action] =='show' %>
